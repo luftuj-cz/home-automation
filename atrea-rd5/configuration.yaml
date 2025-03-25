@@ -18,5 +18,5 @@ modbus:
         precision: 1
         input_type: holding
         address: 10706
-        unit_of_measurement: '˚C'
+        unit_of_measurement: '°C'
         device_class: temperature

@@ -19,3 +19,24 @@ hru_set_requested_power:
         unit: 1
         address: 10708
         value: "{{ value }}"
+hru_set_requested_temperature:
+  description: "Rekuperace: nastav požadovanou teplotu"
+  fields:
+    value:
+      description: "Požadovaná teplota v stupních Celsia"
+      example: 50
+  sequence:
+    - service: modbus.write_register
+      data_template:
+        hub: hru_atrea_rd5
+        unit: 1
+        address: 10700
+        value: 0
+    - delay:
+        milliseconds: 100
+    - service: modbus.write_register
+      data_template:
+        hub: modbus_atrea_rd5
+        unit: 1
+        address: 10710
+        value: "{{ (value * 10) | round(0) | int }}"
