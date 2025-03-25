@@ -1,0 +1,22 @@
+modbus:
+  - name: modbus_atrea_rd5
+    type: tcp
+    host: IP_ADDRESS
+    port: 502
+    sensors:
+      - name: "Rekuperace: požadovaný výkon"
+        unique_id: hru_requested_power
+        slave: 1
+        input_type: holding
+        address: 10704
+        unit_of_measurement: '%'
+        device_class: power_factor
+      - name: "Rekuperace: požadovaná teplota"
+        unique_id: hru_requested_temperature
+        slave: 1
+        scale: 0.1
+        precision: 1
+        input_type: holding
+        address: 10706
+        unit_of_measurement: '˚C'
+        device_class: temperature
