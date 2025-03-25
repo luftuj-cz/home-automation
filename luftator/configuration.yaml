@@ -1,0 +1,97 @@
+mqtt:
+  - number:
+      name: Luftator - klapka 01
+      unique_id: luftator-valve1
+      state_topic: luftator/valves/valve1/state
+      command_topic: luftator/valves/valve1/set
+      min: 0
+      max: 90
+      step: 5
+  - number:
+      name: Luftator - klapka 02
+      unique_id: luftator-valve2
+      state_topic: luftator/valves/valve2/state
+      command_topic: luftator/valves/valve2/set
+      min: 0
+      max: 90
+      step: 5
+  - number:
+      name: Luftator - klapka 03
+      unique_id: luftator-valve3
+      state_topic: luftator/valves/valve3/state
+      command_topic: luftator/valves/valve3/set
+      min: 0
+      max: 90
+      step: 5
+  - number:
+      name: Luftator - klapka 04
+      unique_id: luftator-valve4
+      state_topic: luftator/valves/valve4/state
+      command_topic: luftator/valves/valve4/set
+      min: 0
+      max: 90
+      step: 5
+  - number:
+      name: Luftator - klapka 05
+      unique_id: luftator-valve5
+      state_topic: luftator/valves/valve5/state
+      command_topic: luftator/valves/valve5/set
+      min: 0
+      max: 90
+      step: 5
+  - number:
+      name: Luftator - klapka 06
+      unique_id: luftator-valve6
+      state_topic: luftator/valves/valve6/state
+      command_topic: luftator/valves/valve6/set
+      min: 0
+      max: 90
+      step: 5
+  - number:
+      name: Luftator - klapka 07
+      unique_id: luftator-valve7
+      state_topic: luftator/valves/valve7/state
+      command_topic: luftator/valves/valve7/set
+      min: 0
+      max: 90
+      step: 5
+  - number:
+      name: Luftator - klapka 08
+      unique_id: luftator-valve8
+      state_topic: luftator/valves/valve8/state
+      command_topic: luftator/valves/valve8/set
+      min: 0
+      max: 90
+      step: 5
+  - number:
+      name: Luftator - klapka 09
+      unique_id: luftator-valve9
+      state_topic: luftator/valves/valve9/state
+      command_topic: luftator/valves/valve9/set
+      min: 0
+      max: 90
+      step: 5
+  - number:
+      name: Luftator - klapka 10
+      unique_id: luftator-valve10
+      state_topic: luftator/valves/valve10/state
+      command_topic: luftator/valves/valve10/set
+      min: 0
+      max: 90
+      step: 5
+  - number:
+      name: Luftator - klapka 11
+      unique_id: luftator-valve11
+      state_topic: luftator/valves/valve11/state
+      command_topic: luftator/valves/valve11/set
+      min: 0
+      max: 90
+      step: 5
+  - number:
+      name: Luftator - klapka 12
+      unique_id: luftator-valve12
+      state_topic: luftator/valves/valve12/state
+      command_topic: luftator/valves/valve12/set
+      min: 0
+      max: 90
+      step: 5

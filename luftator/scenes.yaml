@@ -1,0 +1,7 @@
+- id: 'noc'
+  name: Noc
+  entities:
+    number.luftator-valve1:
+      state: '0'
+    number.luftator-valve2:
+      state: '90'
