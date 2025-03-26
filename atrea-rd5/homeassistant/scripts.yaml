@@ -30,7 +30,7 @@ hru_set_requested_temperature:
       data_template:
         hub: hru_atrea_rd5
         unit: 1
-        address: 10700
+        address: 10702
         value: 0
     - delay:
         milliseconds: 100

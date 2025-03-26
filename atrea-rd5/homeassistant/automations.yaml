@@ -1,0 +1,48 @@
+- id: hru_requested_power_change
+  alias: "Nastavit požadovaný výkon rekuperace při změně"
+  trigger:
+    - platform: state
+      entity_id: input_number.hru_requested_power
+  action:
+    - service: script.hru_set_requested_power
+      data:
+        value: "{{ trigger.to_state.state | int(0) }}"
+- id: hru_requested_power_init
+  alias: "Načíst požadovaný výkon rekuperace při startu"
+  trigger:
+    - platform: homeassistant
+      event: start
+  condition:
+    - condition: template
+      value_template: "{{ states('sensor.hru_requested_power_value') | is_number }}"
+  action:
+    - service: input_number.set_value
+      target:
+        entity_id: input_number.hru_requested_power
+      data:
+        value: "{{ states('sensor.hru_requested_power_value') | int(0) }}"
+  mode: single
+- id: hru_requested_temperature_change
+  alias: "Nastavit požadovanou teplotu rekuperace při změně"
+  trigger:
+    - platform: state
+      entity_id: input_number.hru_requested_temperature
+  action:
+    - service: script.hru_set_requested_temperature
+      data:
+        value: "{{ trigger.to_state.state | int(0) }}"
+- id: hru_requested_temperature_init
+  alias: "Načíst požadovanou teplotu rekuperace při startu"
+  trigger:
+    - platform: homeassistant
+      event: start
+  condition:
+    - condition: template
+      value_template: "{{ states('sensor.hru_requested_temperature_value') | is_number }}"
+  action:
+    - service: input_number.set_value
+      target:
+        entity_id: input_number.hru_requested_temperature
+      data:
+        value: "{{ states('sensor.hru_requested_temperature_value') | int(0) }}"
+  mode: single
