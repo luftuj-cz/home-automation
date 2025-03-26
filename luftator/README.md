@@ -1,4 +1,4 @@
 # Řízení zónovacího systému Luftator
 
-- [Home Assistant](homeassistant)
+- [Konfigurační soubory Home Assistant](homeassistant)
 

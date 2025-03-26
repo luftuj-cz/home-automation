@@ -1,4 +1,4 @@
 # Řízení rekuperační jednotky Atrea RD5
 
-- [Home Assistant](homeassistant)
+- [Konfigurační soubory Home Assistant](homeassistant)
 
