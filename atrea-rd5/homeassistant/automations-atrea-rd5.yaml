@@ -1,0 +1,60 @@
+- id: hru_requested_power_change
+  alias: "Nastavit požadovaný výkon rekuperace při změně"
+  trigger:
+    - platform: state
+      entity_id: input_number.hru_requested_power
+  action:
+    - service: script.hru_set_requested_power
+      data:
+        value: "{{ trigger.to_state.state | int(0) }}"
+- id: hru_requested_temperature_change
+  alias: "Nastavit požadovanou teplotu rekuperace při změně"
+  trigger:
+    - platform: state
+      entity_id: input_number.hru_requested_temperature
+  action:
+    - service: script.hru_set_requested_temperature
+      data:
+        value: "{{ trigger.to_state.state | float(0) }}"
+- id: hru_mode_change
+  alias: "Nastavit režim rekuperace při změně"
+  trigger:
+    - platform: state
+      entity_id: input_select.hru_mode
+  action:
+    - service: script.hru_set_mode
+      data:
+        value: "{{ trigger.to_state.state }}"
+- id: hru_requested_temperature_load
+  alias: "Načíst požadovanou teplotu rekuperace"
+  trigger:
+    - platform: state
+      entity_id: sensor.hru_requested_temperature_value
+  action:
+    - service: input_number.set_value
+      target:
+        entity_id: input_number.hru_requested_temperature
+      data:
+        value: "{{ trigger.to_state.state | float(0) }}"
+- id: hru_requested_power_load
+  alias: "Načíst požadovaný výkon rekuperace"
+  trigger:
+    - platform: state
+      entity_id: sensor.hru_requested_power_value
+  action:
+    - service: input_number.set_value
+      target:
+        entity_id: input_number.hru_requested_power
+      data:
+        value: "{{ trigger.to_state.state | int(0) }}"
+- id: hru_mode_load
+  alias: "Načíst režim rekuperace"
+  trigger:
+    - platform: state
+      entity_id: sensor.hru_mode_value
+  action:
+    - service: input_select.select_option
+      target:
+        entity_id: input_select.hru_mode
+      data:
+        option: "{{ state_attr('input_select.hru_mode', 'options')[ trigger.to_state.state | int(0) ]}}"

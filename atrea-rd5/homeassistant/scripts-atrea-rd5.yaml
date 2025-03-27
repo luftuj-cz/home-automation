@@ -15,7 +15,7 @@ hru_set_requested_power:
         milliseconds: 100
     - service: modbus.write_register
       data_template:
-        hub: modbus_atrea_rd5
+        hub: hru_atrea_rd5
         unit: 1
         address: 10708
         value: "{{ value }}"
@@ -36,7 +36,28 @@ hru_set_requested_temperature:
         milliseconds: 100
     - service: modbus.write_register
       data_template:
-        hub: modbus_atrea_rd5
+        hub: hru_atrea_rd5
         unit: 1
         address: 10710
         value: "{{ (value * 10) | round(0) | int }}"
+hru_set_mode:
+  description: "Rekuperace: nastav režim"
+  fields:
+    value:
+      description: "Požadovaný režim"
+      example: "Větrání"
+  sequence:
+    - service: modbus.write_register
+      data_template:
+        hub: hru_atrea_rd5
+        unit: 1
+        address: 10701
+        value: 0
+    - delay:
+        milliseconds: 100
+    - service: modbus.write_register
+      data_template:
+        hub: hru_atrea_rd5
+        unit: 1
+        address: 10709
+        value: "{{ state_attr('input_select.hru_mode', 'options').index(value) | int(0) }}"

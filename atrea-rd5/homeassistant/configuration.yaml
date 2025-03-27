@@ -1,10 +1,13 @@
+automation hru: !include automations-atrea-rd5.yaml
+script hru: !include scripts-atrea-rd5.yaml
+
 modbus:
   - name: hru_atrea_rd5
     type: tcp
     host: IP_ADDRESS
     port: 502
     sensors:
-      - name: "Rekuperace: aktuální požadovaný výkon"
+      - name: hru_requested_power_value
         unique_id: hru_requested_power_value
         slave: 1
         input_type: holding
@@ -12,7 +15,7 @@ modbus:
         unit_of_measurement: '%'
         device_class: power_factor
         scan_interval: 10
-      - name: "Rekuperace: aktuální požadovaná teplota"
+      - name: hru_requested_temperature_value
         unique_id: hru_requested_temperature_value
         slave: 1
         scale: 0.1
@@ -21,6 +24,12 @@ modbus:
         address: 10706
         unit_of_measurement: '°C'
         device_class: temperature
+        scan_interval: 10
+      - name: hru_mode_value
+        unique_id: hru_mode_value
+        slave: 1
+        input_type: holding
+        address: 10705
         scan_interval: 10
 
 input_number:
@@ -42,3 +51,17 @@ input_number:
     unit_of_measurement: "°C"
     mode: slider
     icon: "mdi:thermometer"
+
+input_select:
+  hru_mode:
+    name: "Rekuperace: režim"
+    options:
+      - "Vypnuto"
+      - "Automat"
+      - "Větrání"
+      - "Cirkulace s větráním"
+      - "Cirkulace"
+      - "Noční předchlazení"
+      - "Rozvážení"
+      - "Přetlak"
+    initial: "Větrání"
