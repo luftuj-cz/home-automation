@@ -1,7 +1,7 @@
 mqtt:
   - number:
       name: Luftator - klapka 01
-      unique_id: luftator-valve1
+      object_id: luftator_valve1
       state_topic: luftator/valves/valve1/state
       command_topic: luftator/valves/valve1/set
       min: 0
@@ -9,7 +9,7 @@ mqtt:
       step: 5
   - number:
       name: Luftator - klapka 02
-      unique_id: luftator-valve2
+      object_id: luftator_valve2
       state_topic: luftator/valves/valve2/state
       command_topic: luftator/valves/valve2/set
       min: 0
@@ -17,7 +17,7 @@ mqtt:
       step: 5
   - number:
       name: Luftator - klapka 03
-      unique_id: luftator-valve3
+      object_id: luftator_valve3
       state_topic: luftator/valves/valve3/state
       command_topic: luftator/valves/valve3/set
       min: 0
@@ -25,7 +25,7 @@ mqtt:
       step: 5
   - number:
       name: Luftator - klapka 04
-      unique_id: luftator-valve4
+      object_id: luftator_valve4
       state_topic: luftator/valves/valve4/state
       command_topic: luftator/valves/valve4/set
       min: 0
@@ -33,7 +33,7 @@ mqtt:
       step: 5
   - number:
       name: Luftator - klapka 05
-      unique_id: luftator-valve5
+      object_id: luftator_valve5
       state_topic: luftator/valves/valve5/state
       command_topic: luftator/valves/valve5/set
       min: 0
@@ -41,7 +41,7 @@ mqtt:
       step: 5
   - number:
       name: Luftator - klapka 06
-      unique_id: luftator-valve6
+      object_id: luftator_valve6
       state_topic: luftator/valves/valve6/state
       command_topic: luftator/valves/valve6/set
       min: 0
@@ -49,7 +49,7 @@ mqtt:
       step: 5
   - number:
       name: Luftator - klapka 07
-      unique_id: luftator-valve7
+      object_id: luftator_valve7
       state_topic: luftator/valves/valve7/state
       command_topic: luftator/valves/valve7/set
       min: 0
@@ -57,7 +57,7 @@ mqtt:
       step: 5
   - number:
       name: Luftator - klapka 08
-      unique_id: luftator-valve8
+      object_id: luftator_valve8
       state_topic: luftator/valves/valve8/state
       command_topic: luftator/valves/valve8/set
       min: 0
@@ -65,7 +65,7 @@ mqtt:
       step: 5
   - number:
       name: Luftator - klapka 09
-      unique_id: luftator-valve9
+      object_id: luftator_valve9
       state_topic: luftator/valves/valve9/state
       command_topic: luftator/valves/valve9/set
       min: 0
@@ -73,7 +73,7 @@ mqtt:
       step: 5
   - number:
       name: Luftator - klapka 10
-      unique_id: luftator-valve10
+      object_id: luftator_valve10
       state_topic: luftator/valves/valve10/state
       command_topic: luftator/valves/valve10/set
       min: 0
@@ -81,7 +81,7 @@ mqtt:
       step: 5
   - number:
       name: Luftator - klapka 11
-      unique_id: luftator-valve11
+      object_id: luftator_valve11
       state_topic: luftator/valves/valve11/state
       command_topic: luftator/valves/valve11/set
       min: 0
@@ -89,7 +89,7 @@ mqtt:
       step: 5
   - number:
       name: Luftator - klapka 12
-      unique_id: luftator-valve12
+      object_id: luftator_valve12
       state_topic: luftator/valves/valve12/state
       command_topic: luftator/valves/valve12/set
       min: 0
