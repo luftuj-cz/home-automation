@@ -3,6 +3,9 @@
   trigger:
     - platform: state
       entity_id: input_number.hru_requested_power
+  condition:
+    - condition: template
+      value_template: "{{ (trigger.to_state.state | int(0)) >= 12 }}"
   action:
     - service: script.hru_set_requested_power
       data:
@@ -12,6 +15,9 @@
   trigger:
     - platform: state
       entity_id: input_number.hru_requested_temperature
+  condition:
+    - condition: template
+      value_template: "{{ (trigger.to_state.state | float(0)) >= 10 }}"
   action:
     - service: script.hru_set_requested_temperature
       data:
@@ -29,7 +35,7 @@
   alias: "Načíst požadovanou teplotu rekuperace"
   trigger:
     - platform: state
-      entity_id: sensor.hru_requested_temperature_value
+      entity_id: sensor.rekuperace_aktualni_pozadovana_teplota
   action:
     - service: input_number.set_value
       target:
@@ -40,7 +46,7 @@
   alias: "Načíst požadovaný výkon rekuperace"
   trigger:
     - platform: state
-      entity_id: sensor.hru_requested_power_value
+      entity_id: sensor.rekuperace_aktualni_pozadovany_vykon
   action:
     - service: input_number.set_value
       target:
