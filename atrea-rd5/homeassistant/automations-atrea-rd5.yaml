@@ -35,7 +35,7 @@
   alias: "Načíst požadovanou teplotu rekuperace"
   trigger:
     - platform: state
-      entity_id: sensor.rekuperace_aktualni_pozadovana_teplota
+      entity_id: sensor.hru_requested_temperature_value
   action:
     - service: input_number.set_value
       target:
@@ -46,7 +46,7 @@
   alias: "Načíst požadovaný výkon rekuperace"
   trigger:
     - platform: state
-      entity_id: sensor.rekuperace_aktualni_pozadovany_vykon
+      entity_id: sensor.hru_requested_power_value
   action:
     - service: input_number.set_value
       target:
