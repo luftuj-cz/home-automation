@@ -1,4 +1,4 @@
-# Řízení rekuperační jednotky Atrea RD5
+# Rekuperační jednotky Atrea s řízením RD5
 
 ## Konfigurace automatizace
 
