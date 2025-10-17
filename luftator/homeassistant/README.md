@@ -1,6 +1,6 @@
-# HomeAssistant Luftator
+# HomeAssistant LUFTaTOR
 
-Nastavení automatizace pro zónování Luftator přes platformu Home Assistant
+Nastavení automatizace pro zónování LUFTaTOR přes platformu Home Assistant
 
 ![Lovelace UI](../imgs/luftator-homeassistant.png)
 

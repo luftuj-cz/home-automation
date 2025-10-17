@@ -6,7 +6,7 @@ Pokud přidáte vlastní automatizaci, budeme rádi, když se s ní podělíte p
 
 Seznam zařízení:
 
-- [Zónování Luftator](luftator)
+- [Zónování LUFTaTOR](luftator)
 - [Rekuperační jednotka Atrea RD5](atrea-rd5)
 - [Čidlo CO2, relativní vlhkosti a teploty Nous E10](nous-e10)
 - [Tlačítko Aeotec Button](aeotec-button)

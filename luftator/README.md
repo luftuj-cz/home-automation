@@ -1,4 +1,4 @@
-# Řízení zónovacího systému Luftator
+# Řízení zónovacího systému LUFTaTOR
 
 ## Konfigurace automatizace
 
@@ -11,18 +11,22 @@
 - Připojte se prostřednictvím mobilního telefonu, tabletu či notebooku k WiFi s názvem `luftator` (DŮLEŽITÉ: pokud se vám zobrazí upozornění, že v síti není k dispozici internet, potvrďte, že chcete zůstat připojeni k této síti, v některých případech je vhodné do dobu konfigurace vypnout mobilní data)
 - Otevřete webový prohlížeč a zadejte adresu http://192.168.4.1/
 
-![Luftator UI](imgs/luftator-ui.png)
+![LUFTaTOR UI](imgs/luftator-ui.png)
 
-- Zadejte název řídící jednotky (max. 16 znaků, pouze písmena anglické abecedy, čísla a podtržítka). Pokud budete mít ve své domácnosti více Luftatoru, zadejte např. `odvod` a `privod` nebo `patro1` a `patro2`.
-- Vyberte, zda chcete Luftator připojit po Ethernetu či Wifi. Pro ethernet je vyžadováno automatické přidělování adres pomocí DHCP. Pro připojení po WiFi zvolte název Vaší místní WiFi sítě a zadejte heslo pro připojení k této síti.
+- Zadejte název řídící jednotky (max. 16 znaků, pouze písmena anglické abecedy, čísla a podtržítka). Pokud budete mít ve své domácnosti více LUFTaTORu, zadejte např. `odvod` a `privod` nebo `patro1` a `patro2`.
+- Vyberte, zda chcete LUFTaTOR připojit po Ethernetu či Wifi. Pro ethernet je vyžadováno automatické přidělování adres pomocí DHCP. Pro připojení po WiFi zvolte název Vaší místní WiFi sítě a zadejte heslo pro připojení k této síti.
 - Vyberte režim komunikace MQTT nebo Modbus TCP, podle použité integrace.
 - Pokud zvolíte režim komunikace MQTT, zadejte adresu použitého MQTT brokeru a jméno a heslo pro komunikaci s ním
 - Volitelně je možné pojmenovat jednotlivé klapky. Pokud použijete integraci Home Assistant a zaškrtnete volbu `MQTT Home assistant discovery`, jednotlivé klapky se Vám automaticky zavedou v Home Assistantu v případě použití integrace přes MQTT.
 
-![Luftator UI](imgs/luftator-valves.png)
+![LUFTaTOR UI](imgs/luftator-valves.png)
 
 - Potvrďte kliknutím na tlačítko `Uložit`
 - Pokud je Vaše konfigurace správná, kontrolní dioda se po restartu řídící jednotky trvale rozsvítí. V opačném případě opakujte konfiguraci a ujistěte se, že vyplněné hodnoty jsou správné.
+
+## Aktualizace firmware LUFTaTOR
+
+Aktualizovat LUFTaTOR na poslední verzi firmware je možné prostřednictvím [LUFTaTOR firmware updater](https://cloud.luftuj.cz/luftator/) z webových prohlížečů založených na Chromiu (Chrome, Edge, Brave...)
 
 ## Integrační rozhraní
 
