@@ -1,3 +1,5 @@
+UPOZORNĚNÍ: Tento repozitář je archivován. Aktuální informace naleznete na webu [luftator.eu](https://luftator.eu).
+
 # Doplněk zigbee2mqtt
 
 - Pro připojení Zigbee zařízení budete potřebovat adaptér (např. Home Assistant Connect ZBT-1), pomocí USB ho připojte k Vašemu Home Assistantu

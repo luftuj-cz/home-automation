@@ -1,3 +1,6 @@
+UPOZORNĚNÍ: Tento repozitář je archivován. Aktuální informace naleznete na webu [luftator.eu](https://luftator.eu).
+
+
 # Řízení zónovacího systému LUFTaTOR
 
 ## Konfigurace automatizace

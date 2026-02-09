@@ -1,3 +1,5 @@
+UPOZORNĚNÍ: Tento repozitář je archivován. Aktuální informace naleznete na webu [luftator.eu](https://luftator.eu).
+
 # HomeAssistant - Rekuperační jednotka Atrea s řízením RD5
 
 Nastavení automatizace pro rekuperační jednotku Atrea s řízením RD5 přes platformu Home Assistant

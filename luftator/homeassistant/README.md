@@ -1,3 +1,5 @@
+UPOZORNĚNÍ: Tento repozitář je archivován. Aktuální informace naleznete na webu [luftator.eu](https://luftator.eu).
+
 # HomeAssistant LUFTaTOR
 
 Nastavení automatizace pro zónování LUFTaTOR přes platformu Home Assistant

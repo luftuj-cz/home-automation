@@ -1,3 +1,5 @@
+UPOZORNĚNÍ: Tento repozitář je archivován. Aktuální informace naleznete na webu [luftator.eu](https://luftator.eu).
+
 # HomeAssistant - tlačítko Aeotec Button
 
 - Pokud jste ta doposud neučinili, nainstalujte podporu pro [mqtt](../../homeassistant/addons/mosquitto) a doplněk [zibee2mqtt](../../homeassistant/addons/zigbee2mqtt) podle návodů pod těmito odkazy. 

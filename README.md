@@ -1,8 +1,8 @@
+UPOZORNĚNÍ: Tento repozitář je archivován. Aktuální informace naleznete na webu [luftator.eu](https://luftator.eu). 
+
 # Repozitář nastavení pro domácí automatizace vzduchotechniky
 
 Repozitář obsahuje nastavení pro domácí automatizace vzduchotechniky (např. Home Assitant). 
-
-Pokud přidáte vlastní automatizaci, budeme rádi, když se s ní podělíte prostřednictvím [pull requestu](https://github.com/luftuj-cz/home-automation/pulls).
 
 Seznam zařízení:
 

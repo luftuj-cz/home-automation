@@ -1,3 +1,5 @@
+UPOZORNĚNÍ: Tento repozitář je archivován. Aktuální informace naleznete na webu [luftator.eu](https://luftator.eu).
+
 # Rekuperační jednotky Atrea s řízením RD5
 
 ## Konfigurace automatizace

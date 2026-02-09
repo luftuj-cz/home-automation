@@ -1,3 +1,5 @@
+UPOZORNĚNÍ: Tento repozitář je archivován. Aktuální informace naleznete na webu [luftator.eu](https://luftator.eu).
+
 # Doplněk Mosquitto broker
 
 V Nastavení | Doplňky klikněte na Obchod s doplňky, vyhledejte a nainstalujte doplněk Mosquitto broker. Po jeho instalaci klikněte na tlačítko spustit.
